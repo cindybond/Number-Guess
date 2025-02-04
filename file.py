@@ -2,7 +2,6 @@ import random
 
 def generate_random(lower, upper):
     random_num = random.randrange(lower, upper)
-    print(random_num)
     return random_num
 
 def guess_check(player_guess, random_num):
@@ -10,7 +9,10 @@ def guess_check(player_guess, random_num):
         print('CORRECT!')
         return True
     else:
-        print('WRONG!')
+        if player_guess < random_num:
+            print('WRONG! The number is higher!\n')
+        else:
+            print('WRONG! The number is lower!\n')
         return False
 
 def main():
@@ -19,7 +21,7 @@ def main():
     print('-----------------------------')
     print('In this game, I will ask for 2 numbers from you, lower and upper. \n'
           'I will then randomly generate a number between the lower and upper. \n'
-          'You will have to guess the number correctly! Think of it like hangman ...\n')     
+          'You will have to guess the number correctly!\n')     
  
     while True:
         while True:
@@ -52,7 +54,7 @@ def main():
             if game_over:
                 play_again = input('Do you want to play again? (Y/N): ').lower()
                 if play_again == 'y':
-                    print('Starting a new round...')
+                    print('\n Starting a new round... \n')
                     break  # Break to start a new round
                 elif play_again == 'n':
                     print('Thanks for playing! See you again!')
