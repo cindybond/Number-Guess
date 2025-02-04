@@ -1,2 +1,6 @@
-# Number-Guess
-A simple number guessing game
+#Description
+
+A simple number guessing console game written in Python.
+
+#Overview
+
