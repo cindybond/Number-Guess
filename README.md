@@ -7,4 +7,4 @@ A simple number guessing console game written in Python.
 ![gameplay](https://github.com/user-attachments/assets/ea1c482b-1787-48c8-aba5-692b60e07d8b)
 
 # Try here
-https://replit.com/@cindyinside81/Number-Guess#file.py
+(https://colab.research.google.com/drive/1T_BU_tBC0drzMcVRwWiIWsVU04SVpYfx?usp=sharing)
